@@ -17,8 +17,7 @@ namespace csharp_scrap
 
             Console.WriteLine("{0}, {1}, {2} years old", p.lastName, p.firstName, p.age);
             p.humanstats();
-
-
+            
             Console.ReadLine();
         }
     }
