@@ -28,10 +28,12 @@ namespace csharp_scrap
             p.humanstats();
 
             int x = 1, y = 2;
-            Console.WriteLine("1: x is {0}, y is {0}", x, y);
+            Console.WriteLine("1: x is {0}, y is {1}", x, y);
             AuxFuncs af1 = new AuxFuncs();
-            af1.swapbyref(ref x, ref y);
-            Console.WriteLine("2: x is {0}, y is {0}", x, y);
+            //af1.swapbyref(ref x, ref y);
+            af1.X = 1; af1.Y = 2;
+
+            //Console.WriteLine("2: x is {0}, y is {1}", x, y);
             Console.ReadLine();
         }
     }
