@@ -35,6 +35,9 @@ namespace csharp_scrap
 
             //Console.WriteLine("2: x is {0}, y is {1}", x, y);
             Console.ReadLine();
+
+            Resource r;
+            if(fac)
         }
     }
 }

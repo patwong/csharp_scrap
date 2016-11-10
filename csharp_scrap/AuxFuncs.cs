@@ -24,4 +24,21 @@ namespace csharp_scrap
             get; set;
         }
     }
+    class Resource { }
+    class Factory
+    {
+        int xyz;
+        public static bool Build(out Resource r)
+        {
+            r = null;
+            try
+            {
+                r = new Resource();
+                return true;
+            } catch (Exception)
+            {
+                return false;
+            }
+        }
+    }
 }
