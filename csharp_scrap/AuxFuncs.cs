@@ -23,6 +23,16 @@ namespace csharp_scrap
         {
             get; set;
         }
+        public bool MatchesAny(string search, params string[] tests)
+        {
+            foreach (var test in tests)
+            {
+                if (test.Contains(search)) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
     class Resource { }
     class Factory
