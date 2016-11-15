@@ -57,13 +57,16 @@ namespace csharp_scrap
         static int staticY = 10;
         static ConstructorDemo()
         {
-            Console.Write("Static Constructor: x={0} and y={1}", staticX, staticY);
+            staticX = 2;
+            Console.WriteLine("Static Constructor: x={0} and y={1}", staticX, staticY);
         }
         int instanceX;
         int instanceY = 5;
         public ConstructorDemo()
         {
+            instanceX = 2;
             Console.Write("Instance Constructor: x={0} and y={1}", instanceX, instanceY);
         }
     }
+
 }

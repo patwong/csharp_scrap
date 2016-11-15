@@ -56,8 +56,10 @@ namespace csharp_scrap
             Console.WriteLine(p2.Name);
             //p2.smallout(); //doesn't work - name != Name
 
-            var demo = new ConstructorDemo();
+            //var demo = new ConstructorDemo();
+            
 
+                      
 
             Console.ReadLine();
         }
