@@ -21,5 +21,17 @@ namespace csharp_scrap
             Console.WriteLine("datetime: {0}", SomeTime);
         }
     }
+    class Person2
+    {
+        private string name;
+        public void smallout()
+        {
+            Console.WriteLine(name);
+        }
+        public string Name
+        {
+            get; set;
+        }
+    }
 
 }

@@ -43,7 +43,7 @@ namespace csharp_scrap
             else
                 Console.WriteLine("false!");
             string zs;
-            zs.Concat("as", "many", "strings", "as", "we", "want", "...");
+            zs = String.Concat("as", "many", "strings", "as", "we", "want", "...");
             Console.WriteLine(zs);
             //Resource r;
             //if (Factory.Build(out r))
@@ -51,7 +51,12 @@ namespace csharp_scrap
             //    /* */
             //}
 
+            Person2 p2 = new Person2();
+            p2.Name = "Sheldon";
+            Console.WriteLine(p2.Name);
+            //p2.smallout(); //doesn't work - name != Name
 
+            var demo = new ConstructorDemo();
 
 
             Console.ReadLine();
